@@ -52,6 +52,10 @@ func (v *Variant) IsCriticalFours() bool {
 	return strings.HasPrefix(v.Name, "Critical Fours")
 }
 
+func (v *Variant) IsSynesthesia() bool {
+	return strings.HasPrefix(v.Name, "Synesthesia")
+}
+
 func (v *Variant) HasReversedSuits() bool {
 	if v.IsUpOrDown() {
 		return true
